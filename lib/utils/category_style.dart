@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+const Map<String, IconData> kCategoryIcons = {
+  'food': Icons.restaurant,
+  'coffee': Icons.local_cafe,
+  'transport': Icons.directions_car,
+  'fuel': Icons.local_gas_station,
+  'shopping': Icons.shopping_bag,
+  'bill': Icons.receipt_long,
+  'electric': Icons.bolt,
+  'water': Icons.water_drop,
+  'phone': Icons.phone_android,
+  'home': Icons.home,
+  'health': Icons.local_hospital,
+  'education': Icons.school,
+  'entertainment': Icons.movie,
+  'sport': Icons.fitness_center,
+  'travel': Icons.flight,
+  'pet': Icons.pets,
+  'baby': Icons.child_care,
+  'gift': Icons.card_giftcard,
+  'salary': Icons.payments,
+  'bonus': Icons.emoji_events,
+  'investment': Icons.trending_up,
+  'business': Icons.store,
+  'savings': Icons.savings,
+  'other': Icons.category,
+};
+
+const List<int> kCategoryColors = [
+  0xFFE53935,
+  0xFFD81B60,
+  0xFF8E24AA,
+  0xFF5E35B1,
+  0xFF3949AB,
+  0xFF1E88E5,
+  0xFF039BE5,
+  0xFF00ACC1,
+  0xFF00897B,
+  0xFF43A047,
+  0xFF7CB342,
+  0xFFF9A825,
+  0xFFFB8C00,
+  0xFFF4511E,
+  0xFF6D4C41,
+  0xFF757575,
+  0xFF546E7A,
+];
+
+IconData iconFor(String key) => kCategoryIcons[key] ?? Icons.category;
